@@ -31,6 +31,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 	&& apt-get update \
 	&& apt-get install --no-install-recommends --no-install-suggests -q -y \
 		gcc make autoconf libc-dev pkg-config libmcrypt-dev php-pear \
+		rsync \
 		cron \
 		iputils-ping \
 		net-tools \
