@@ -43,6 +43,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		python-pip \
 		python-setuptools \
 		nginx \
+		php-mongodb \
 		php7.3-bcmath \
 		php7.3-bz2 \
 		php7.3-fpm \
@@ -63,7 +64,8 @@ RUN DEBIAN_FRONTEND=noninteractive \
 		php7.3-xml \
 		php7.3-redis \
 		php7.3-gd \
-		php-mongodb \
+		php7.3-soap \
+		mysql-client \
 	&& mkdir -p /run/php \
 	&& pip install wheel \
 	&& pip install supervisor supervisor-stdout \
